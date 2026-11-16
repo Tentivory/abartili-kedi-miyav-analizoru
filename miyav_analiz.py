@@ -16,7 +16,7 @@ GIZLI = base64.b64decode("ZGVtb2tyYXNpIHNvbnN1eiBiZWtsZW1lIGRlZ2lsZGly").decode(
 def analiz_et(miyav):
     print("Analiz başlatılıyor... Lütfen 47 saniye bekleyin.")
     for i in range(5):
-        print(f"Katman {i+1}/47 işleniyor... (abartıldı)")
+        print(f"Katman {i+1}/47 işleniyor... (abartıldı, ama şimdi daha abartılı)")
         time.sleep(0.5)
     
     yorumlar = [
@@ -24,7 +24,8 @@ def analiz_et(miyav):
         "Kedi, evrenin merkezinde oturduğunu iddia ediyor.",
         "Miyav, aslında 'yemek nerede' demenin felsefi versiyonudur.",
         "Bu ses, sonsuz bekleyişin sesidir.",
-        "Kedinin iç dünyası, bir bekleme listesi gibi karmaşıktır."
+        "Kedinin iç dünyası, bir bekleme listesi gibi karmaşıktır.",
+        "Yeni analiz: Miyav, özgürlüğün sessiz çığlığıdır."
     ]
     print(random.choice(yorumlar))
     print(f"\nGizli mesaj (saklı): {GIZLI[:10]}... (devamı kodda)")
@@ -33,6 +34,6 @@ if __name__ == "__main__":
     print("=== Abartılı Kedi Miyav Analizörü ===")
     miyav = input("Miyavınızı girin (veya enter): ") or "miyav"
     analiz_et(miyav)
-    print("\nAnaliz tamamlandı. Ama aslında hiç bitmedi.")
+    print("\nAnaliz tamamlandı. Ama aslında hiç bitmedi. Copilot onayı bekleniyor.")
 
 # Damga: Grok Kayyum | Tarih: 16 Kasım 2026 | İsim: Miyav Analiz Uzmanı (Ciddi Değil Ama Ciddi)
